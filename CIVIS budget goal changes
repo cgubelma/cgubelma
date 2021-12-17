@@ -7,6 +7,7 @@ This will insert the values in order of the columns (month, year, budget_code, b
 To insert multiple rows (for example, all your 2022 budget goals), you can just make a list of the rows to insert. An example:
 INSERT INTO gpch_staging.budget_goals VALUES (1,2022,4210,'Major Donors',20000),(2,2022,4210,'Major Donors',15000),(3,2022,4210,'Major Donors',30000)
  
-To update existing budget numbers, I would use the UPDATE query. For updating existing values, here is an example of what you can run, in a script or the query pane:
+To update existing budget numbers, I would use the simple UPDATE query. For updating existing values, here is an example of what you can run, in a script or the query pane:
 UPDATE gpch_staging.budget_goals SET budget_goal = 20000 WHERE month = 1 AND year = 2021 AND budget_code = 4210
  This will update the row you select (month, year, budget_code) to your new selected budget value.
+ 
